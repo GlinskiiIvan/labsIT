@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const hostname = '127.0.0.1';
-const port = 8080;
+const port = 3001;
 const app = express();
  
 // Use Node.js body parsing middleware
@@ -35,7 +35,7 @@ const urlencodedParser = bodyParser.urlencoded({
 // Start the server
 const server = app.listen(port, hostname, (error) => {
     if (error) return console.log(`Error: ${error}`);
- 
+    console.log(`Server running at http://${hostname}:${server.address().port}`);
     console.log(`Server listening on port ${server.address().port}`);
 });
 
