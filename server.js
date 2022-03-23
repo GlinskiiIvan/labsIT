@@ -1,7 +1,8 @@
 // Require packages and set the port
 const express = require('express');
-const port = 3002;
 const bodyParser = require('body-parser');
+
+const port = 8080;
 const app = express();
  
 // Use Node.js body parsing middleware
